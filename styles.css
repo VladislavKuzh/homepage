@@ -9,13 +9,14 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
+    background-color: #262626;
 
-    --primary-text-color: #181820;
-    --secondary-text-color: #5c5c62;
-    --durability-text-color: #6a737d9c;
-    --icon-color: #6a737d;
-    --border-color: #ff9a0045;
-    --text-decoration-color: #ff9a00;
+    --primary-text-color: #ffffffef;
+    --secondary-text-color: #ffffffc1;
+    --durability-text-color: #ffffffdd;
+    --icon-color: #6E8680;
+    --border-color: #797B7F;
+    --text-decoration-color: #CF403C;
 }
 
 .container {
@@ -38,8 +39,8 @@ body {
 
 .resume {
     margin: 50px auto;
-    border: 1px solid #f5f5f5;
-    box-shadow: 1px 1px 7px 7px #f5f5f5;
+    border: 1px solid #797B7F;
+    box-shadow: 1px 1px 17px 17px #797B7F;
     padding: 30px 0;
     max-width: 900px;
 }
@@ -104,6 +105,10 @@ body {
     text-decoration: none;
     display: flex;
     justify-content: start;
+}
+
+.contact-info__item:hover .contact-info__item-icon path {
+    fill: #cf413cb6;
 }
 
 .contact-info__item:not(:last-child) {
@@ -193,7 +198,7 @@ body {
     left: -20px;
     height: 3px;
     width: 10px;
-    background-color: #CF403C;
+    background-color: var(--text-decoration-color);
 }
 
 /* Experience and additional info styles */
@@ -258,6 +263,10 @@ body {
 .additional-info__education-header {
     color: var(--secondary-text-color);
     text-align: left;
+    margin-bottom: 20px;
+}
+
+.additional-info__education-university {
     margin-bottom: 20px;
 }
 
