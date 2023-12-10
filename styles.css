@@ -169,9 +169,31 @@ body {
     margin-bottom: 15px;
 }
 
-.skills__text {
+.skills__list {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.skills__item {
+    position: relative;
+    color: #797B7F;
+    text-align: justify;
+}
+
+.skills__item span {
     color: var(--secondary-text-color);
     text-align: justify;
+}
+
+.skills__item::before {
+    content: url('');
+    display: inline-block;
+    position: absolute;
+    top: 0.6rem;
+    left: -20px;
+    height: 3px;
+    width: 10px;
+    background-color: #CF403C;
 }
 
 /* Experience and additional info styles */
